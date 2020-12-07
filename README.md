@@ -3,15 +3,15 @@
 ### Mini-Project 3 - ECSE 551 McGill University
 
 ## Abstract
-Text classification is a well-known machine learning problem. In this project, a classifier is built that identifies the subreddit from which a comment originated. Two separate algorithms are used, a multinomial Na{\"i}ve Bayes classifier and a support-vector machine classifier. To obtain optimal performance from these classifiers, the raw text comments must be converted to features. The majority of this report presents the methods used to construct the features which yielded the best results. Through 5-fold cross-validation, the best results were found using the multinomial Na{\"i}ve Bayes classifier with a tuned Laplace smoothing parameter, and assuming a uniform distribution of each class. Results were further improved by selecting features which were determined to be the most relevant using a chi-squared statistical test. This classifier was then applied to a test set, yielding a preliminary accuracy of 93.1\% according to Kaggle. 
+A convolutional neural network is the preferred machine learning model to perform image classification tasks. In this project, image classification is performed on a modified version of the Fashion-MNIST data set. To obtain the best performing model, several network architectures and optimization hyperparameters were considered. The best results were obtained using a VGG-16 network, which has a history of strong performance on image classification tasks. The weights were trained using the Adam optimization algorithm, with a decreasing learning rate to help convergence to a global minimum. The model submitted to the Kaggle competition achieved a preliminary accuracy of 97.9\%.
 
 ## Code.zip
 The code.zip contains 6 files:
 * 2 Colab notebook files - miniproject3.ipynb and miniproject3_supplemental.ipynb
-  * miniproject3.ipynb  and all experiments to improve model performance. One other sklearn classifier
-  * miniproject3_supplemental.ipynb contains each step for choosing parameters and preprocessing methods for Multinomial Naive Bayes model. The result is shown as Table in section 4.1.1  Multinomial Naïve Bayes in Report.pdf
-* 3 Dataset files - train.csv, test.csv, and Submit.csv
-  * Submit.csv is the prediction of our own Naive Bayes function with an accuracy of 93.1% according to Kaggle.
+  * miniproject3.ipynb contains the best hyperparameters we tried to get the highest performance.
+  * miniproject3_supplemental.ipynb contains each step for choosing parameters. The details are shown in Section 4 Result in Report.pdf
+* 1 Dataset file - model_trained_VGG_16_98percent.tar
+  * model_trained_VGG_16_98percent.tar is the VGG-16 neural networks we trained to get 98% on Kaggle
 * 1 ReadMe file - readme.md
 
 ## Report.pdf
@@ -20,5 +20,4 @@ All experiments are summarized in Report.pdf
 ## Code Usage - (Python 3.6, Colab)
 1. Please Upload to python notebook (.ipynb file) to Colab
 2. Select the required notebook and select "Run" in each code.
-3. Note: Some of the codes are involved gird searching and may not be able to run in colab due to memory limit.
-
+3. Note: you may not be able to run %cd '/content/gdrive/MyDrive/Colab/ECSE551Miniproject/Mini-Project3', if you wanna test, you need to connect to your own path and put training and testing dataset into that folder.
