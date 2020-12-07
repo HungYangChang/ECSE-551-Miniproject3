@@ -6,7 +6,7 @@
 A convolutional neural network is the preferred machine learning model to perform image classification tasks. In this project, image classification is performed on a modified version of the Fashion-MNIST data set. To obtain the best performing model, several network architectures and optimization hyperparameters were considered. The best results were obtained using a VGG-16 network, which has a history of strong performance on image classification tasks. The weights were trained using the Adam optimization algorithm, with a decreasing learning rate to help convergence to a global minimum. The model submitted to the Kaggle competition achieved a preliminary accuracy of 97.9\%.
 
 ## Code.zip
-The code.zip contains 6 files:
+The code.zip contains 4 files:
 * 2 Colab notebook files - miniproject3.ipynb and miniproject3_supplemental.ipynb
   * miniproject3.ipynb contains the best hyperparameters we tried to get the highest performance.
   * miniproject3_supplemental.ipynb contains each step for choosing parameters. The details are shown in Section 4 Result in Report.pdf
